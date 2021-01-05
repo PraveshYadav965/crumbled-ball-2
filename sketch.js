@@ -22,6 +22,8 @@ function setup() {
 	ceiling = new Ground(350,0,14000,10)
 	paperObject = new Paper(100,690,70)
 	ground = new Ground(500,height,1000,20)
+	sprite = new Ground(897,600,8,200);
+	sprite1 = new Ground(705,600,8,200);
 
 	boxLeftBody = Bodies.rectangle(540,580,10,180,{isStatic:true});
 	World.add(world,boxLeftBody);
@@ -47,6 +49,8 @@ function draw() {
   wall.display();
   ground.display();
   paperObject.display(); 
+  sprite.display(); 
+  sprite1.display();
   image(dustbinImage,700,490,200,200);
 }
 
